@@ -1,0 +1,35 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.registro {
+    max-width: 1200px;
+    height: 500px;
+    padding: 30px;
+    background-color: #fff;
+}
+
+.registro-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+input {
+    display: flex;
+    margin-bottom: 30px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: #FF4D4D solid 2px;
+}
+
+input:focus {
+    border: #FF4D4D solid 2px;
+    outline: none;
+}
