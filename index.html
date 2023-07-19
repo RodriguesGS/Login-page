@@ -4,25 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Formulário</title>
+    <title>Forms</title>
 </head>
 <body>
     <main>
-        <div class="form">
+        <div class="form signin">
             <h1>Sign in</h1>
 
-            <input type="text" name="user" id="user" placeholder="Username" required>
+            <input type="text" name="signin-user" id="signin-user" placeholder="Username" required autocomplete="off">
 
-            <input type="password" name="password" id="password" placeholder="Password" required>
+            <input type="password" name="signin-password" id="signin-password" placeholder="Password" required>
 
             <div class="links">
                 <a href="#" class="forgot">Forgot Password?</a>
 
-                <a href="#" class="signUp">Sign up</a>
-            </div>
+                <a onclick="change()" class="sign">Sign up</a>
+            </div>  
 
-            <button>Login</button>
+            <button class="btn" onclick="cleanSignIn()">Login</button>
+        </div>
+
+        <div class="form signup">
+            <h1>Sign up</h1>
+
+            <input type="text" name="signup-user" id="signup-user" placeholder="Username" required autocomplete="off">
+
+            <input type="password" name="signup-password" id="signup-password" placeholder="Password" required>
+
+            <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm password" required>
+
+            <a onclick="change()" class="sign">Sign in</a>
+
+            <button class="btn register" onclick="cleanSignUp()">Create Account</button>
         </div>
     </main>
 </body>
+
+<script src="js/script.js"></script>
 </html>
